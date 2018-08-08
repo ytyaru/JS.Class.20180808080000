@@ -12,9 +12,9 @@ define(function(require, exports, module) {
     Human.CountUp();
     alert("Last count: " + Human.Count);
     Human.Count = 100;
-    Human.Count = null;
+    // Human.Count = null;      // セットされてしまう！
     Human.Count = undefined;
     Human.Count = NaN;
-    //Human.Count = "";
+    //Human.Count = "";         // セットされてしまう！
     alert("Set count: " + Human.Count);
 });
