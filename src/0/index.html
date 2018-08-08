@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>ES6 class</title>
+    <script>
+        class Human {
+            constructor() {
+                this.name = null;
+            }
+            Speak() {
+                console.log("name: " + this.name);
+                alert("name: " + this.name);
+            }
+        };
+        let human = new Human();
+        human.Speak();
+        human.name = "NAME";
+        human.Speak();
+    </script>
+</head>
+<body></body>
+</html>
